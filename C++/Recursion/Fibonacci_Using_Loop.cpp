@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int fibUsingLoop(int n)
+int fib(int n)
 {
     int t0=0, t1=1, s=0;
 
@@ -19,6 +19,6 @@ int fibUsingLoop(int n)
 
 int main()
 {
-    cout<<fibUsingLoop(10);
+    cout<<fib(10);
 
 }
