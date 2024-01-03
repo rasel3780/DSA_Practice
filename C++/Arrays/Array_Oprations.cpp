@@ -43,9 +43,59 @@ void Display(int *arr, int arrSize)
     cout << endl;
 }
 
-int main()
+int Get(int arr[], int arraySize, int index)
 {
-    int arr[] = {15, 25, 35, 45, 55};
+    if(index>=0 && index<arraySize)
+        return arr[index];
+    return -1;
+}
+
+int Max(int arr[], int arraySize)
+{
+    int maxx = arr[0];
+    for(int i=0; i<arraySize; i++)
+    {
+        if(arr[i]>maxx)
+            maxx=arr[i];
+    }
+    return maxx;
+}
+
+int Min(int arr[], int arraySize)
+{
+    int minn = arr[0];
+    for(int i=0; i<arraySize; i++)
+    {
+        if(arr[i]<minn)
+            minn=arr[i];
+    }
+    return minn;
+}
+
+int Sum(int arr[], int arraySize)
+{
+    int total = 0;
+    for(int i=0; i<arraySize; i++)
+        total = total+arr[i];
+    
+    return total;
+}
+
+double Avg(int arr[], int arraySize)
+{
+    int total = 0;
+    for(int i=0; i<arraySize; i++)
+        total = total+arr[i];
+    
+    return double(total)/arraySize;
+}
+
+
+
+int main()
+
+{
+    int arr[] = {15, 25, 35, 45, 55, 61, 63};
 
     int arrSize = sizeof(arr) / sizeof(arr[0]);
     Display(arr, arrSize);
@@ -55,5 +105,11 @@ int main()
 
     deleteAnElement(arr, arrSize, 50);
     Display(arr, arrSize);
+
+    cout<<Get(arr, arrSize, 2)<<endl;
+    cout<<Max(arr, arrSize)<<endl;
+    cout<<Min(arr, arrSize)<<endl;
+    cout<<Sum(arr, arrSize)<<endl;
+    cout<<Avg(arr, arrSize)<<endl;
     
 }
