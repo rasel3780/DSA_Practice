@@ -9,6 +9,14 @@ struct Array
 
 };
 
+void swap(int *x, int *y)
+{
+    int temp = *x;
+    *x = *y;
+    *y = temp;
+
+}
+
 //using extra array 
 void Reverse1(struct Array *arr)
 {
@@ -22,6 +30,15 @@ void Reverse1(struct Array *arr)
     for(int i=0; i<arr->length; i++)
     {
         arr->A[i] = B[i];
+    }
+}
+
+//by swaping 
+void Reverse2(struct Array *arr)
+{
+    for(int i=0, j=arr->length-1; i<j; i++, j--)
+    {
+        swap(arr->A[i], arr->A[j]);
     }
 }
 
@@ -39,6 +56,8 @@ int main()
     struct Array arr = {{1,2,3,4,5}, 10, 5};
     Display(arr);
     Reverse1(&arr);
+    Display(arr);
+    Reverse2(&arr);
     Display(arr);
 
 }
