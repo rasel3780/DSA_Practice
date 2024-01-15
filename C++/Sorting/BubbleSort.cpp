@@ -19,15 +19,17 @@ void bubbleSort(int arr[], int n)
                 swap(arr[j], arr[j+1]);
             }
         }
+        cout<<i<<":"<<endl;
+        display(arr, n);
+        
     }
 }
 
 int main()
 {
-    int arr[] = {1,3,2,4,5,7,6};
+    int arr[] = {5, 1, 4, 2, 8};
     int siz = sizeof(arr)/sizeof(arr[0]);
     display(arr, siz);
     bubbleSort(arr, siz);
-    display(arr, siz);
-
+    
 }
