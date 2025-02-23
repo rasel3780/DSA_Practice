@@ -17,6 +17,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinarySearchRecursive", "Bi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinarySearchRecursiveUnitTest", "BinarySearchRecursiveUnitTest\BinarySearchRecursiveUnitTest.csproj", "{E2729946-9E3D-4660-AE16-EC64433FE4B7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelectionSort", "SelectionSort\SelectionSort.csproj", "{48F7C3A8-80A0-4691-B198-4ECC518EB459}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelectionSortUnitTest", "SelectionSortUnitTest\SelectionSortUnitTest.csproj", "{FA74DEE4-7B5B-4C3D-8115-CBD1CF786128}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +51,14 @@ Global
 		{E2729946-9E3D-4660-AE16-EC64433FE4B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E2729946-9E3D-4660-AE16-EC64433FE4B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E2729946-9E3D-4660-AE16-EC64433FE4B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48F7C3A8-80A0-4691-B198-4ECC518EB459}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48F7C3A8-80A0-4691-B198-4ECC518EB459}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48F7C3A8-80A0-4691-B198-4ECC518EB459}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48F7C3A8-80A0-4691-B198-4ECC518EB459}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA74DEE4-7B5B-4C3D-8115-CBD1CF786128}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA74DEE4-7B5B-4C3D-8115-CBD1CF786128}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA74DEE4-7B5B-4C3D-8115-CBD1CF786128}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA74DEE4-7B5B-4C3D-8115-CBD1CF786128}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,5 +67,6 @@ Global
 		{8028B5E8-D8C8-4024-BC43-3AAE97FED6D8} = {D339B2C7-7100-48E9-AB5D-4DA75A4F0309}
 		{B8E7FEE1-BD5E-444C-A33E-1BE0480496F0} = {D339B2C7-7100-48E9-AB5D-4DA75A4F0309}
 		{E2729946-9E3D-4660-AE16-EC64433FE4B7} = {D339B2C7-7100-48E9-AB5D-4DA75A4F0309}
+		{FA74DEE4-7B5B-4C3D-8115-CBD1CF786128} = {D339B2C7-7100-48E9-AB5D-4DA75A4F0309}
 	EndGlobalSection
 EndGlobal
