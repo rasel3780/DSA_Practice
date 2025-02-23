@@ -61,7 +61,7 @@ namespace SelectionSortUnitTest
         public void SelectionSort_UnsortedArrayWithMixNumber_SortedCorrectly()
         {
             int[] arr = { 3, -2, 5, -1,-3,0, 5, 4 };
-            int[] expected = { -1, -2, -3,0, 1, 3, 4, 5 };
+            int[] expected = { -3 ,- 2, -1, 0, 3, 4, 5 , 5};
             sort.SelectionSort(arr, arr.Length);
             Assert.AreEqual(expected, arr);
         }
